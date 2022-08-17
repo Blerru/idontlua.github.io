@@ -1,5 +1,5 @@
 .blog-wrapper {
-    width: clamp(20rem, 75vw, 64rem);
+    width: clamp(30rem, 75vw, 64rem);
 
     margin: 0 auto;
     padding: 4rem;
@@ -84,6 +84,7 @@
 
         img {
             border-radius: 0.5rem;
+            height: auto;
         }
     }
 }
