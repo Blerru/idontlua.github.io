@@ -11,7 +11,7 @@ export default function CodeBlock(props: ICodeBlock) {
         <SyntaxHighlighter
             style={atomOneDark}
             language={props.language}
-            customStyle={{ borderRadius: "0.5rem", display: "block" }}
+            customStyle={{ borderRadius: "0.5rem", display: "block", minWidth: "100%" }}
             wrapLongLines={true}
         >
             {props.code}

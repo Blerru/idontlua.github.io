@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import sanityClient from "../client";
-import emojify from "react-easy-emoji";
 import "./postSection.scss";
-import { timestampToRelative } from "../utils/timestampToRelative";
 import BlogPostItem from "../components/BlogPostItem";
 
 export default function PostsSection() {

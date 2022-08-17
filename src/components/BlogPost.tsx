@@ -13,7 +13,9 @@ const blogPortableComponents = {
     types: {
         code: ({ value }: any) => <CodeBlock language={value.language} code={value.code} />,
         image: ({ value }: any) =>
-            value.asset ? <img src={imageBuilder.image(value.asset).url()} /> : null,
+            value.asset ? (
+                <img className="content-image" src={imageBuilder.image(value.asset).url()} />
+            ) : null,
     },
 };
 

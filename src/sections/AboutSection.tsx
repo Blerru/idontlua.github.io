@@ -11,7 +11,7 @@ import {
 
 function AboutSection() {
     return (
-        <section className="section about-section">
+        <section className="section about-section" style={{ position: "relative" }}>
             <div className="about-container">
                 <img
                     draggable="false"
