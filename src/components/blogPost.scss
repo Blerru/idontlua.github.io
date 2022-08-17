@@ -1,0 +1,89 @@
+.blog-wrapper {
+    width: clamp(20rem, 75vw, 64rem);
+
+    margin: 0 auto;
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .post-title {
+            color: var(--text-regular);
+            font-size: 3.5rem;
+        }
+
+        .post-description {
+            color: var(--text-lighter);
+            font-size: 1.5rem;
+        }
+
+        .extra-information-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .tags {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+
+                span {
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    text-align: center;
+                }
+            }
+
+            .publish-date {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--text-light);
+            }
+        }
+
+        .separator {
+            border-bottom-style: solid;
+            border-bottom-color: var(--text-invisible);
+            border-width: 2px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+
+        p {
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: var(--text-light);
+        }
+
+        li {
+            color: var(--text-light);
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+
+        strong {
+            color: var(--accent-color);
+            font-weight: 700;
+            font-family: "Kalam", cursive;
+        }
+
+        img {
+            border-radius: 0.5rem;
+        }
+    }
+}

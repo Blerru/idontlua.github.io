@@ -1,0 +1,35 @@
+.post-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .blog-container {
+        gap: 2rem;
+
+        .posts-container {
+            gap: 3rem;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .blog-post {
+                gap: 0.25rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                max-width: 64rem;
+
+                .post-information {
+                    gap: 1rem;
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
